@@ -1,0 +1,27 @@
+import java.util.Arrays;
+import java.util.Collections;
+import java.util.Scanner;
+import java.util.stream.IntStream;
+
+public class Main {
+
+    public static void main(String... args) {
+
+        int[] sArray = {9,8,7,4,5,6,2,1};
+
+        reverse(sArray);
+
+
+
+
+
+    }
+    public static void reverse(int[] x){
+        Integer[] reversed = Arrays.stream(x).boxed().toArray( Integer[]::new );
+Collections.reverse(Arrays.asList(reversed));
+        System.out.println(Arrays.toString(reversed));
+
+    }
+
+
+}
